@@ -11,7 +11,12 @@ public class StateData {
 	private ArrayList<TransitionData> transitionsOut;
 	private ArrayList<TransitionData> transitionsIn;
 
-	public StateData(){}
+	public StateData(){
+		
+		actions = new ArrayList<String>();
+		transitionsOut = new ArrayList<TransitionData>();
+		transitionsIn = new ArrayList<TransitionData>();
+	}
 	
 	public StateData(boolean isStart, boolean isEnd, String name){
 		this.isStart = isStart;
